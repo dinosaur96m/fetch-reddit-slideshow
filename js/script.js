@@ -43,7 +43,7 @@ const siftImages = (url) =>{
 
 //make fetch happen
 const fetchRedditData = () => {
-    fetch(`${requestUrl}${input.value}%20pictures&limit=6`)
+    fetch(`${requestUrl}${input.value}%20pictures&limit=100`)
     ///when working add+input.value+"%20pictures")
     .then((responseData) => {
         //extract the JSON data from the fetch object
