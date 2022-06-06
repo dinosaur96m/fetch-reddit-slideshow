@@ -1,8 +1,3 @@
-
-//////////////////////
-//universal variables
-/////////////////////
-
 //track the picture on display
 let picTracker = 0
 //collect pictures from json
@@ -11,10 +6,6 @@ let pics = []
 let filteredPics = []
 //declare url for fetch
 const requestUrl = "https://www.reddit.com/search.json?q="
-
-///////////////////////////
-////////universal functions 
-///////////////////////////
 
 //cycle through the slideshow
 const takeTheStage = (array) => {
@@ -104,9 +95,9 @@ document.addEventListener("DOMContentLoaded", () => {
         //Hide form and text
         slideshowMode()
     })
-    //////////////////////////////////////
-    /////Stop Button Listener and Function
-    //////////////////////////////////////
+
+    //Stop Button Listener and Function
+ 
     stopButton.addEventListener('click', () =>{
         console.log("stop clicked!")
         //reset variables 
@@ -130,6 +121,4 @@ document.addEventListener("DOMContentLoaded", () => {
         form.style.display = "block"
     })
 })
-
-
 
